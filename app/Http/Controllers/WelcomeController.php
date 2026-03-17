@@ -10,4 +10,9 @@ class WelcomeController extends Controller
     {
         return 'Hello world';
     }
+
+    public function greeting()
+    {
+        return view('blog.hello', ['name' => 'Jiro dari WelcomeController']);
+    }
 }
